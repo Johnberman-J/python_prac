@@ -1,3 +1,4 @@
+# math.trunc() => 소수점을 생략하고 정수부만 나타내줌
 from math import sqrt
 
 
