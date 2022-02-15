@@ -1,3 +1,3 @@
-def solution(s):
+def solution(s, n):
     answer = ''
     return answer
