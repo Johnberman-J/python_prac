@@ -1,3 +1,3 @@
-def solution(nums):
+def solution(dartResult):
     answer = 0
     return answer
