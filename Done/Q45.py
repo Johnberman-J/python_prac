@@ -10,10 +10,10 @@ def solution(array, commands):
             answer.append(array[i-1])
             continue
 
-        n = array[i-1:j]
-        n.sort()
+        sum_arr = array[i-1:j]
+        sum_arr.sort()
 
-        result = n[k-1]
+        result = sum_arr[k-1]
         answer.append(result)
 
     return answer
