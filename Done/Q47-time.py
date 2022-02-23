@@ -1,3 +1,4 @@
+# 마지막 for문을 대체할것을 찾아봐라
 import math
 
 

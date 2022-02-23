@@ -1,3 +1,4 @@
+# 분모가 0일때도 생각해야한다
 def solution(N, stages):
     answer = []
     fail_arr = []
