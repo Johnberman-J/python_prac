@@ -7,25 +7,25 @@ input_data = sys.stdin.readline
 
 while True:
     temp_stack = []
-    input_string = input_data().rstrip()
+    input_line = input_data().rstrip()
     # 이부분 주의. 마지막(7번)케이스때문에 strip()이 아닌 rstrip()써야함.
-    if input_string == ".":
+    if input_line == ".":
         break
 
-    for word in input_string:
-        if word=="(" or word=="[":
-            temp_stack.append(word)
-        elif word==")":
+    for char in input_line:
+        if char=="(" or char=="[":
+            temp_stack.append(char)
+        elif char==")":
             if len(temp_stack)!=0 and temp_stack[-1] == "(":
                 temp_stack.pop()
             else:
-                temp_stack.append(word)
+                temp_stack.append(char)
                 break
-        elif word=="]":
+        elif char=="]":
             if len(temp_stack)!=0 and temp_stack[-1] == "[":
                 temp_stack.pop()
             else:
-                temp_stack.append(word)
+                temp_stack.append(char)
                 break
                 
     
@@ -33,7 +33,4 @@ while True:
         print("yes")
     else:
         print("no")
-
-            
-                
-
+        
