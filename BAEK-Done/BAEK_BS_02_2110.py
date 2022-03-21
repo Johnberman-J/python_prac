@@ -1,6 +1,5 @@
 # 이분 탐색 > 공유기 설치
 
-from itertools import count
 from sys import stdin
 
 
